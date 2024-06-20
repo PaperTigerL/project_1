@@ -1,0 +1,345 @@
+
+*** Running vivado
+    with args -log thinpad_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source thinpad_top.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source thinpad_top.tcl -notrace
+Command: synth_design -top thinpad_top -part xc7a200tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1480
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/software/Xlinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2256.902 ; gain = 408.855
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'thinpad_top' [D:/file/project_1/project_1/project_1.srcs/thinpad_top.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'thinpad_top' (0#1) [D:/file/project_1/project_1/project_1.srcs/thinpad_top.v:3]
+WARNING: [Synth 8-3848] Net dpy0 in module/entity thinpad_top does not have driver. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.v:13]
+WARNING: [Synth 8-3848] Net dpy1 in module/entity thinpad_top does not have driver. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.v:14]
+WARNING: [Synth 8-3848] Net uart_rdn in module/entity thinpad_top does not have driver. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.v:17]
+WARNING: [Synth 8-3848] Net uart_wrn in module/entity thinpad_top does not have driver. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.v:18]
+WARNING: [Synth 8-3848] Net base_ram_addr in module/entity thinpad_top does not have driver. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.v:25]
+WARNING: [Synth 8-3848] Net base_ram_be_n in module/entity thinpad_top does not have driver. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.v:26]
+WARNING: [Synth 8-3848] Net base_ram_ce_n in module/entity thinpad_top does not have driver. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.v:27]
+WARNING: [Synth 8-3848] Net base_ram_oe_n in module/entity thinpad_top does not have driver. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.v:28]
+WARNING: [Synth 8-3848] Net base_ram_we_n in module/entity thinpad_top does not have driver. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.v:29]
+WARNING: [Synth 8-3848] Net ext_ram_addr in module/entity thinpad_top does not have driver. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.v:33]
+WARNING: [Synth 8-3848] Net ext_ram_be_n in module/entity thinpad_top does not have driver. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.v:34]
+WARNING: [Synth 8-3848] Net ext_ram_ce_n in module/entity thinpad_top does not have driver. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.v:35]
+WARNING: [Synth 8-3848] Net ext_ram_oe_n in module/entity thinpad_top does not have driver. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.v:36]
+WARNING: [Synth 8-3848] Net ext_ram_we_n in module/entity thinpad_top does not have driver. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.v:37]
+WARNING: [Synth 8-3848] Net txd in module/entity thinpad_top does not have driver. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.v:40]
+WARNING: [Synth 8-3848] Net flash_a in module/entity thinpad_top does not have driver. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.v:44]
+WARNING: [Synth 8-3848] Net flash_rp_n in module/entity thinpad_top does not have driver. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.v:46]
+WARNING: [Synth 8-3848] Net flash_vpen in module/entity thinpad_top does not have driver. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.v:47]
+WARNING: [Synth 8-3848] Net flash_ce_n in module/entity thinpad_top does not have driver. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.v:48]
+WARNING: [Synth 8-3848] Net flash_oe_n in module/entity thinpad_top does not have driver. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.v:49]
+WARNING: [Synth 8-3848] Net flash_we_n in module/entity thinpad_top does not have driver. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.v:50]
+WARNING: [Synth 8-3848] Net flash_byte_n in module/entity thinpad_top does not have driver. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.v:51]
+WARNING: [Synth 8-3848] Net video_red in module/entity thinpad_top does not have driver. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.v:54]
+WARNING: [Synth 8-3848] Net video_green in module/entity thinpad_top does not have driver. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.v:55]
+WARNING: [Synth 8-3848] Net video_blue in module/entity thinpad_top does not have driver. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.v:56]
+WARNING: [Synth 8-3848] Net video_hsync in module/entity thinpad_top does not have driver. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.v:57]
+WARNING: [Synth 8-3848] Net video_vsync in module/entity thinpad_top does not have driver. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.v:58]
+WARNING: [Synth 8-3848] Net video_clk in module/entity thinpad_top does not have driver. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.v:59]
+WARNING: [Synth 8-3848] Net video_de in module/entity thinpad_top does not have driver. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.v:60]
+WARNING: [Synth 8-3330] design thinpad_top has an empty top module
+WARNING: [Synth 8-7129] Port dpy0[7] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpy0[6] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpy0[5] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpy0[4] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpy0[3] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpy0[2] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpy0[1] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpy0[0] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpy1[7] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpy1[6] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpy1[5] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpy1[4] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpy1[3] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpy1[2] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpy1[1] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpy1[0] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uart_rdn in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uart_wrn in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_addr[19] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_addr[18] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_addr[17] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_addr[16] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_addr[15] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_addr[14] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_addr[13] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_addr[12] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_addr[11] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_addr[10] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_addr[9] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_addr[8] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_addr[7] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_addr[6] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_addr[5] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_addr[4] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_addr[3] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_addr[2] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_addr[1] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_addr[0] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_be_n[3] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_be_n[2] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_be_n[1] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_be_n[0] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_ce_n in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_oe_n in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_we_n in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_addr[19] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_addr[18] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_addr[17] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_addr[16] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_addr[15] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_addr[14] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_addr[13] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_addr[12] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_addr[11] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_addr[10] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_addr[9] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_addr[8] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_addr[7] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_addr[6] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_addr[5] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_addr[4] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_addr[3] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_addr[2] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_addr[1] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_addr[0] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_be_n[3] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_be_n[2] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_be_n[1] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_be_n[0] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_ce_n in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_oe_n in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_we_n in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port txd in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_a[22] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_a[21] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_a[20] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_a[19] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_a[18] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_a[17] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_a[16] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_a[15] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_a[14] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_a[13] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_a[12] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_a[11] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_a[10] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_a[9] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_a[8] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_a[7] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_a[6] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_a[5] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_a[4] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_a[3] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_a[2] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_a[1] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_a[0] in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_rp_n in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_vpen in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_ce_n in module thinpad_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_oe_n in module thinpad_top is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2346.031 ; gain = 497.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2363.934 ; gain = 515.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2363.934 ; gain = 515.887
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2363.934 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/file/project_1/project_1/project_1.srcs/thinpad_top.xdc]
+WARNING: [Vivado 12-507] No nets matched 'clk_11M0592_IBUF'. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'clock_btn_IBUF'. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'reset_btn_IBUF'. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/file/project_1/project_1/project_1.srcs/thinpad_top.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/file/project_1/project_1/project_1.srcs/thinpad_top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/file/project_1/project_1/project_1.srcs/thinpad_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/thinpad_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/thinpad_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2394.426 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2394.426 ; gain = 0.000
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/software/Xlinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2394.426 ; gain = 546.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2394.426 ; gain = 546.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2394.426 ; gain = 546.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2394.426 ; gain = 546.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3330] design thinpad_top has an empty top module
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2394.426 ; gain = 546.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2394.426 ; gain = 546.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2394.426 ; gain = 546.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2394.426 ; gain = 546.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2394.426 ; gain = 546.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2394.426 ; gain = 546.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2394.426 ; gain = 546.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2394.426 ; gain = 546.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2394.426 ; gain = 546.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2394.426 ; gain = 546.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |IBUF  |    16|
+|2     |OBUF  |    16|
+|3     |OBUFT |   114|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2394.426 ; gain = 546.379
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 224 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 2394.426 ; gain = 515.887
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2394.426 ; gain = 546.379
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2394.426 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2394.426 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 77f45561
+INFO: [Common 17-83] Releasing license: Synthesis
+18 Infos, 135 Warnings, 3 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2394.426 ; gain = 1001.344
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'D:/file/project_1/project_1/project_1.runs/synth_1/thinpad_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file thinpad_top_utilization_synth.rpt -pb thinpad_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 20 18:36:57 2024...
